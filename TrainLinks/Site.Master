@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TrainLinks.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+        <title>TrainLink</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+</head>
+
+</html>
+<body>
+            <table style="padding: 0px; margin: 0px; width:100%;">
+                    <tr>
+                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: left; height: 30px;"><b style="font-size: x-large">TrainLink</b></td>
+                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: left; height: 30px;"><b style="font-size: large">Search</b></td>
+                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: left; height: 30px;"><b style="font-size: large">Links - Raw Data</b></td>
+                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: right; height: 30px; font-size: medium;"><asp:LoginName runat="server" />&nbsp;&nbsp;</td>
+                    </tr>
+                </table>
+			<div style="height: 50px;"> <%--id="wrapper">--%>
+					<header id="header">
+						<div class="inner">
+
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="Default.aspx">Home</a></li>
+							<li><a href="Default.aspx">Lord of the Links (Raw data)</a></li>
+
+						</ul>
+					</nav>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <br />
+            <br />
+            <hr />
+            <footer>
+                <p style="color: #808080; font-size: medium;">&copy; <%: DateTime.Now.Year %> - TrainLink MS-toddhayn</p>
+            </footer>
+        </div>
+</body>
+<%--<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TrainLinks.SiteMaster" %>
+    ORGINAL SITE MASTER WITH FORMATTING
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+        <title>Training Links</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+</head>
+<body>
+            <table style="padding: 0px; margin: 0px; width:100%;">
+                    <tr>
+                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: left; height: 30px;"><b style="font-size: x-large">Training Links</b></td>
+                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: right; height: 30px; font-size: medium;"><asp:LoginName runat="server" /></td>
+                    </tr>
+                </table>
+			<div style="height: 50px;"> <%--id="wrapper">--%>
+	<%--				<header id="header">
+						<div class="inner">
+
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="Default.aspx">Home</a></li>
+							<li><a href="Default.aspx">Helpful Links</a></li>
+
+						</ul>
+					</nav>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <br />
+            <br />
+            <hr />
+            <footer>
+                <p style="color: #808080; font-size: medium;">&copy; <%: DateTime.Now.Year %> - Training Links MS-toddhayn</p>
+            </footer>
+        </div>
+</body>
+</html>--%>
+<%----%>
