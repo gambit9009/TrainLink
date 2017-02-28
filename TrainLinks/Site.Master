@@ -20,11 +20,15 @@
 <body>
             <table style="padding: 0px; margin: 0px; width:100%;">
                     <tr>
-                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: left; height: 30px;"><b style="font-size: x-large">TrainLink</b></td>
-                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: left; height: 30px;"><b style="font-size: large">Search</b></td>
-                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: left; height: 30px;"><b style="font-size: large">Links - Raw Data</b></td>
+                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: left; height: 30px;"><b style="font-size: x-large"><a href="Default.aspx" style="color: #FFFFFF">TrainLink</a></b></td>
+                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: left; height: 30px;"><b style="font-size: large"><a href="Default.aspx" style="color: #FFFFFF">Search</a></b></td>
+                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: left; height: 30px;"><b style="font-size: large"><a href="LinkPage.aspx?cat=New2SQL" style="color: #FFFFFF">New2SQL</a></b></td>
+                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: left; height: 30px;"><b style="font-size: large"><a href="LinksRaw.aspx" style="color: #FFFFFF">Links - Raw Data</a></b></td>
+                    <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: left; height: 30px;"><b style="font-size: large">   
+                        <asp:Panel id="pnlAdmin" runat="server" Visible="False"><b style="font-size: medium"><a href="adminlinks.aspx" style="color: #FFFFFF">Admin</a></b></asp:Panel></td>
                     <td style="color: #FFFFFF; background-color: #000080; vertical-align: top; text-align: right; height: 30px; font-size: medium;"><asp:LoginName runat="server" />&nbsp;&nbsp;</td>
                     </tr>
+                <a href="AdminLinks.aspx">AdminLinks.aspx</a>
                 </table>
 			<div style="height: 50px;"> <%--id="wrapper">--%>
 					<header id="header">
@@ -42,7 +46,9 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="Default.aspx">Home</a></li>
-							<li><a href="Default.aspx">Lord of the Links (Raw data)</a></li>
+                            <li><a href="Default.aspx">Search</a></li>
+                            <li><a href="LinkPage.aspx?cat=New2SQL" style="color: #FFFFFF">New2SQL</a></li>
+							<li><a href="LinksRaw.aspx">Lord of the Links (Raw data)</a></li>
 
 						</ul>
 					</nav>
@@ -57,11 +63,10 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <br />
-            <br />
-            <hr />
-            <footer>
-                <p style="color: #808080; font-size: medium;">&copy; <%: DateTime.Now.Year %> - TrainLink MS-toddhayn</p>
-            </footer>
+                <footer style="position: fixed; bottom: 0px; text-align: right; width: 100%;">
+                    <p style="color: #999999; font-size: small; text-align: right;">&copy; <%: DateTime.Now.Year %> - TrainLink MS-toddhayn&nbsp;</p>
+                </footer>
+
         </div>
 </body>
 <%--<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TrainLinks.SiteMaster" %>

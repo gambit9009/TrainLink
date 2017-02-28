@@ -22,9 +22,9 @@
 		}
 
 		body:not(.is-touch) .tiles article:hover > .image {
-			-moz-transform: none;
-			-webkit-transform: none;
-			-ms-transform: none;
+			-moz-transform: none; /*firefox*/
+			-webkit-transform: none;/*safari chrome*/
+			-ms-transform: none;/*IE*/
 			transform: none;
 		}
 
